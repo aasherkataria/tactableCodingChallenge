@@ -5,9 +5,8 @@ injectable();
 export class TodoClient {
   public async fetchTodos(): Promise<any> {
     try {
-      const response = await axios.get(
-        "https://jsonplaceholder.typicode.com/todos"
-      );
+      const response = await axios.get(process.env.TODO_API_URL as string);
+
       return response.data;
     } catch (error) {
       console.log(error);
