@@ -1,11 +1,11 @@
 import "reflect-metadata";
 
 import { Container } from "inversify";
-import { TodoClient } from "./TodoClient";
 import { ApiManager } from "./ApiManager";
+import { TodoClient } from "./TodoClient";
 
 let container = new Container();
-container.bind<TodoClient>(TodoClient).toSelf();
 container.bind<ApiManager>(ApiManager).toSelf();
+container.bind<TodoClient>(TodoClient).toSelf();
 
 export { container };

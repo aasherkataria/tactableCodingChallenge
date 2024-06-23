@@ -1,5 +1,5 @@
 import { inject, injectable } from "inversify";
-import { IApiManager } from "./IApiManager";
+import IApiManager from "./IApiManager";
 import { TodoClient } from "./TodoClient";
 
 @injectable()

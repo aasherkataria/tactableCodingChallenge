@@ -1,15 +1,16 @@
 import axios from "axios";
 import { injectable } from "inversify";
 
-injectable();
+@injectable()
 export class TodoClient {
-  public async fetchTodos(): Promise<any> {
+  public async fetchTodos() {
     try {
-      const response = await axios.get(process.env.TODO_API_URL as string);
-
+      const response = await axios.get(
+        "https://jsonplaceholder.typicode.com/todos"
+      );
       return response.data;
     } catch (error) {
-      console.log(error);
+      console.log("Error thrown from TodoClient", error);
     }
   }
 }

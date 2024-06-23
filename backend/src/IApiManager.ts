@@ -1,6 +1,6 @@
 /**
  * Interface that defines methods for an API manager.
  */
-export interface IApiManager {
+export default interface IApiManager {
   fetchData(): Promise<any>;
 }
