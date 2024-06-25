@@ -1,7 +1,7 @@
 # Tactable Coding Challenge
 
-This project is a potential solution to the Tactable.io coding challenge that assess the use of Clean Architecture practices using DI.
-The solution implements a the DIC technique used to dynamically and declaritively handle the service/class dependency.
+This project is a potential solution to the Tactable.io coding challenge that assesses the use of Clean Architecture practices using DI.
+The solution implements the DIC technique which is used to dynamically and declaritively handle the service/class dependency.
 ## Run Locally
 
 Clone the project
